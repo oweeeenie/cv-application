@@ -1,10 +1,13 @@
 import './App.css';
+import Header from './Header.jsx';
+import GeneralInformation from './GeneralInformation';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello, World!</h1>
-    </div>
+    <>
+      <Header />
+      <GeneralInformation />
+    </>
   );
 }
 
