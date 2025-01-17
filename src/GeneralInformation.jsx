@@ -28,7 +28,7 @@ function GeneralInformation() {
         <input
           type="text"
           className="input-class flex mb-4 px-4 py-1 w-3/4 text-xl text-left text-custom-input bg-transparent border-gray-500 border-2 rounded-lg focus:outline-custom-hover "
-          placeholder="Address"
+          placeholder="Current Occupation"
         />
         <input
           type="text"
