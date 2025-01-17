@@ -1,12 +1,10 @@
 import './App.css';
-import Header from './Header.jsx';
-import GeneralInformation from './GeneralInformation';
+import Components from './Components.jsx';
 
 function App() {
   return (
     <>
-      <Header />
-      <GeneralInformation />
+      <Components />
     </>
   );
 }
