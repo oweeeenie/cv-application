@@ -14,6 +14,11 @@ export default function CvPreview({
   course,
   from,
   to,
+  jobTitle,
+  companyName,
+  workFrom,
+  workTo,
+  workDescription,
 }) {
   return (
     <>
@@ -26,11 +31,11 @@ export default function CvPreview({
         </header>
 
         <div className="main-sidebar-container flex flex-grow text-custom-input">
-          <div className="preview-sidebar bg-custom-hover flex flex-col w-3/7 h-full p-4">
-            <h3 className="sidebar-header-contacts border-b-2 border-black pb-2 text-xl">
+          <div className="preview-sidebar bg-custom-hover flex flex-col w-3/7 h-full p-4 ">
+            <h3 className="sidebar-header-contacts border-b-2 border-black pb-2 text-xl font-bold ">
               Contact Information
             </h3>
-            <p>
+            <p className="">
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 pt-5" />
               {emailAddress}
             </p>
@@ -39,25 +44,31 @@ export default function CvPreview({
               {phoneNumber}
             </p>
 
-            <h3 className="sidebar-header-education text-xl border-b-2 border-black pb-2 pt-2">
+            <h3 className="sidebar-header-education text-xl border-b-2 border-black pb-2 pt-2 font-bold">
               Education
             </h3>
             <p className="degree text-xl">{degree}</p>
             <p className="university text-md">{university}</p>
             <p className="course text-sm">{course}</p>
-            <p className="date">
+            <p className="educationDate">
               {from} - {to}
             </p>
           </div>
 
           <div className="preview-main p-5 text-custom-text pt-20">
-            <h3 className="main-profile text-2xl border-b-2 border-black pb-2">
+            <h3 className="main-profile text-2xl border-b-2 border-black pb-2 font-bold">
               Profile
             </h3>
             <p>{description}</p>
-            <h3 className="main-work-experience text-2xl mt-32 border-b-2 border-black pb-2">
+            <h3 className="main-work-experience text-2xl mt-32 border-b-2 border-black pb-2 font-bold">
               Work Experience
             </h3>
+            <p className="jobTitle text-xl">{jobTitle}</p>
+            <p className="companyName text-lg">{companyName}</p>
+            <p className="workDate text-lg">
+              {workFrom} - {workTo}
+            </p>
+            <p className="work-description text-md">{workDescription}</p>
           </div>
         </div>
       </div>
