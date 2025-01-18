@@ -9,6 +9,11 @@ export default function CvPreview({
   phoneNumber,
   occupation,
   description,
+  degree,
+  university,
+  course,
+  from,
+  to,
 }) {
   return (
     <>
@@ -37,6 +42,12 @@ export default function CvPreview({
             <h3 className="sidebar-header-education text-xl border-b-2 border-black pb-2 pt-2">
               Education
             </h3>
+            <p className="degree text-xl">{degree}</p>
+            <p className="university text-md">{university}</p>
+            <p className="course text-sm">{course}</p>
+            <p className="date">
+              {from} - {to}
+            </p>
           </div>
 
           <div className="preview-main p-5 text-custom-text pt-20">

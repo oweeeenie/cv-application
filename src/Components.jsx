@@ -12,6 +12,11 @@ export default function Components() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [occupation, setOccupation] = useState('');
   const [description, setDescription] = useState('');
+  const [degree, setDegree] = useState('');
+  const [university, setUniversity] = useState('');
+  const [course, setCourse] = useState('');
+  const [from, setFrom] = useState('');
+  const [to, setTo] = useState('');
   return (
     <>
       <div className="flex justify-center gap-20 pt-8">
@@ -31,7 +36,18 @@ export default function Components() {
             description={description}
             setDescription={setDescription}
           />
-          <Education />
+          <Education
+            degree={degree}
+            setDegree={setDegree}
+            university={university}
+            setUniversity={setUniversity}
+            course={course}
+            setCourse={setCourse}
+            from={from}
+            setFrom={setFrom}
+            to={to}
+            setTo={setTo}
+          />
           <WorkExperience />
         </div>
         <CvPreview
@@ -41,6 +57,11 @@ export default function Components() {
           phoneNumber={phoneNumber}
           occupation={occupation}
           description={description}
+          degree={degree}
+          university={university}
+          course={course}
+          from={from}
+          to={to}
         />
       </div>
     </>
