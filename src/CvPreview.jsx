@@ -23,7 +23,7 @@ export default function CvPreview({
   return (
     <>
       <div className="preview-main-container flex flex-col w-1/4 border-2 border-gray-500 rounded-md h-[750px]">
-        <header className="preview-header  p-2 bg-custom-input w-full text-center text-custom-text">
+        <header className="preview-header p-2 bg-custom-input w-full text-center text-custom-text">
           <h1 className="header-name text-3xl">
             {firstName} {lastName}
           </h1>
@@ -31,7 +31,7 @@ export default function CvPreview({
         </header>
 
         <div className="main-sidebar-container flex flex-grow text-custom-input">
-          <div className="preview-sidebar bg-custom-hover flex flex-col w-3/7 h-full p-4 ">
+          <div className="preview-sidebar bg-custom-hover flex flex-col w-3/7 h-full p-4">
             <h3 className="sidebar-header-contacts border-b-2 border-black pb-2 text-xl font-bold ">
               Contact Information
             </h3>

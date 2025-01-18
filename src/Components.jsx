@@ -14,11 +14,13 @@ export default function Components() {
   const [occupation, setOccupation] = useState('');
   const [description, setDescription] = useState('');
   // education
+
   const [degree, setDegree] = useState('');
   const [university, setUniversity] = useState('');
   const [course, setCourse] = useState('');
   const [from, setFrom] = useState('');
   const [to, setTo] = useState('');
+
   // work experience
   const [jobTitle, setJobTitle] = useState('');
   const [companyName, setCompanyName] = useState('');

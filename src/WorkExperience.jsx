@@ -51,15 +51,6 @@ export default function WorkExperience({
           value={workDescription}
           onChange={(e) => setWorkDescription(e.target.value)}
         />
-
-        <div className="add-delete-container w-3/4 gap-4 flex">
-          <button className="bg-custom-hover rounded-lg px-5 py-1 flex ml-auto">
-            Add
-          </button>
-          <button className="bg-custom-hover rounded-lg px-4 py-1">
-            Delete
-          </button>
-        </div>
       </div>
     </>
   );
