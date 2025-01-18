@@ -2,13 +2,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-export default function CvPreview() {
+export default function CvPreview({
+  firstName,
+  lastName,
+  emailAddress,
+  phoneNumber,
+  occupation,
+  description,
+}) {
   return (
     <>
       <div className="preview-main-container flex flex-col w-1/4 border-2 border-gray-500 rounded-md h-[750px]">
         <header className="preview-header  p-2 bg-custom-input w-full text-center text-custom-text">
-          <h1 className="header-name text-3xl">Preview Name</h1>
-          <h3 className="header-occupation text-lg">Preview Occupation</h3>
+          <h1 className="header-name text-3xl">
+            {firstName} {lastName}
+          </h1>
+          <h3 className="header-occupation text-lg">{occupation}</h3>
         </header>
 
         <div className="main-sidebar-container flex flex-grow text-custom-input">
@@ -18,11 +27,11 @@ export default function CvPreview() {
             </h3>
             <p>
               <FontAwesomeIcon icon={faEnvelope} className="mr-2 pt-5" />
-              randomemail@gay.com
+              {emailAddress}
             </p>
             <p>
               <FontAwesomeIcon icon={faPhone} className="mr-2 pt-5" />
-              111-222-3101
+              {phoneNumber}
             </p>
 
             <h3 className="sidebar-header-education text-xl border-b-2 border-black pb-2 pt-2">
@@ -34,6 +43,7 @@ export default function CvPreview() {
             <h3 className="main-profile text-2xl border-b-2 border-black pb-2">
               Profile
             </h3>
+            <p>{description}</p>
             <h3 className="main-work-experience text-2xl mt-32 border-b-2 border-black pb-2">
               Work Experience
             </h3>
